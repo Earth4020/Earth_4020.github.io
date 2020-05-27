@@ -37,3 +37,26 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+
+
+
+
+
+
+
+function scrollAppear() {
+    var introText = document.querySelector('.intro');
+    var introPosition = introText.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.3;
+
+    if (introPosition < screenPosition) {
+        introText.classList.add('intro-appear');
+    }
+    else {
+        introText.classList.remove('intro-appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppear);

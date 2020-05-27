@@ -16,8 +16,18 @@
 	transform-origin: center;    // Transform origin is the center of the dot.
 }
 
+::-webkit-scrollbar { /* Webkit */
+    width: 0;  /* ширина scrollbar'a */
+    background: transparent  /* опционально */
+}
+
 body {
 	background: #ffffff;
+}
+
+html {
+    -ms-overflow-style : none;  /* IE 10+ */
+    scrollbar-width    : none /* Firefox */
 }
 
 /*------------------------------------------------------------------------------
@@ -331,11 +341,18 @@ main .box {
 	width: 500px;
 	height: 500px;
 	padding: 50px;
-  border: 1px solid red;
+}
+
+main .item-2 {
+  width: 200px;
+  height: 200px;
 }
 
 main h1 {
 	font-size: 1.3em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
 }
 
 main .earth {
@@ -418,7 +435,10 @@ main .opacity {
 }
 
 
-
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 
 /*------------------------------------------------------------------------------
@@ -602,10 +622,10 @@ main .opacity {
   line-height: 21px;
   box-sizing: border-box;
   box-shadow: 0 0 20px 5px #000;
-  left: 85%;
+  left: 71%;
   top: 70%;
   transform: translate(-50%, -50%);
-  z-index: 99999;
+  z-index: 999999999;
   background: rgba(0, 0, 0, .8);
   opacity: 0;
   display: flex;
@@ -613,7 +633,8 @@ main .opacity {
   align-items: center;
   font-family: "Roboto";
   width: 350px;
-  font-size: 20px;
+  height: auto;
+  font-size: 2.5vh;
   padding: 30px;
   color: #fff;
 }
