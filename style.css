@@ -46,7 +46,7 @@ html {
   padding-right: 40px;
   position: fixed;
   right: 0;
-  background: white;  
+  /*background: white;  */
   perspective: 800;   
   transition: all 800ms cubic-bezier(.9, 0, .33, 1);
   z-index: 99999;
@@ -61,7 +61,7 @@ html {
   display: block;
   position: relative;
   top: 2%;
-  left: 35%;
+  left: 58%;
   cursor: pointer;  
   transition: all 800ms cubic-bezier(.9, 0, .33, 1);
 }
@@ -98,6 +98,7 @@ html {
   transform: rotate(0);   
   transition: all 800ms cubic-bezier(.9, 0, .33, 1);
 }
+
 
 /*навигация*/
 
@@ -141,7 +142,7 @@ html {
   margin: -180px 32% 120px;
 }
 
-/*сциальные иконки*/
+/*социальные иконки*/
 
 .navigation .navigation__social {
   width: 100%;
@@ -322,6 +323,8 @@ header .header-wrapper {
 
 
 
+
+
 /*------------------------------------------------------------------------------
 /project
 ------------------------------------------------------------------------------*/
@@ -446,7 +449,7 @@ main .opacity {
 ------------------------------------------------------------------------------*/
 
 /* Собственно сам слайдер */
-.slider{
+.slider {
     width: 100%;
     position: relative;
     margin: auto;
@@ -542,7 +545,6 @@ main .opacity {
 
 .slider .fon  {
   width: 100%;
-  max-width: 1400px;
   height: 100%; 
   position: relative;
 }
