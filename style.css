@@ -395,7 +395,7 @@ main .small {
 	opacity: 1;
 }
 
-main .part {
+main .curcle {
 	z-index: 999;
 	transition: 0.3s;
 	width: 100%;
@@ -412,7 +412,7 @@ main .active:hover {
 
 /*модальное окно*/
 
-main .description {
+main .text {
 	position: relative;
 	top: 10%;
 	right: 0%;
