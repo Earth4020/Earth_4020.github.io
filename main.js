@@ -46,17 +46,38 @@ function showSlides(n) {
 
 
 
-function scrollAppear() {
-    var introText = document.querySelector('.intro');
-    var introPosition = introText.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight / 1.3;
+// function scrollAppear() {
+//     var introText = document.querySelector('.intro');
+//     var introPosition = introText.getBoundingClientRect().top;
+//     var screenPosition = window.innerHeight / 1.3;
 
-    if (introPosition < screenPosition) {
-        introText.classList.add('intro-appear');
-    }
-    else {
-        introText.classList.remove('intro-appear');
-    }
-}
+//     if (introPosition < screenPosition) {
+//         introText.classList.add('intro-appear');
+//     }
+//     else {
+//         introText.classList.remove('intro-appear');
+//     }
+// }
 
-window.addEventListener('scroll', scrollAppear);
+// window.addEventListener('scroll', scrollAppear);
+
+
+
+
+// меню
+
+
+ // $(function($) {
+ //            $(window).scroll(function(){
+ //                if($(this).scrollTop() > 800){
+ //                    $('.topBar').css('background','#000');
+ //                    $('.middleBar').css('background','#000');
+ //                    $('.bottomBar').css('background','#000');
+ //                }
+ //                else if ($(this).scrollTop() < 800){
+ //                    $('.topBar').css('background','#fff');
+ //                    $('.middleBar').css('background','#fff');
+ //                    $('.bottomBar').css('background','#fff');
+ //                }
+ //            });
+ //        });
