@@ -42,7 +42,7 @@ html {
 .navigation {
   width: 100px;
   height: 100%;
-  display: block;
+  display: none;
   padding-right: 40px;
   position: fixed;
   right: 0;
@@ -104,7 +104,7 @@ html {
 
 .navigation .navigation__ul {
   margin-top: 220px;
-  margin-right: -50px;
+  margin-right: 0px;
   opacity: 0;
   visibility: hidden;  
   transform: rotateY(-90deg) translateX(100px);   
@@ -361,9 +361,9 @@ main h1 {
 main .earth {
 	width: 180px;
 	height: 180px;
-	position: absolute;
-	left: 29%;
-	top: 40%;
+	position: relative;
+	left: 2%;
+	top: 90px;
 }
 
 
@@ -479,6 +479,7 @@ main .opacity {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     z-index: 9999999;
+    display: none;
 }
 .slider .next {
     right: 0;
@@ -504,10 +505,10 @@ main .opacity {
 .slider-dots {
     text-align: center;
 }
-.slider-dots_item{
+.slider-dots_item {
     cursor: pointer;
-    height: 12px;
-    width: 12px;
+    height: 22px;
+    width: 22px;
     margin: 0 2px;
     background-color: #ddd;
     border-radius: 50%;
