@@ -374,10 +374,10 @@ main .map {
 
 main svg {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 400px;
-	height: 400px;
+	top: -15%;
+	left: -70px;
+	width: 500px;
+	height: 500px;
 	z-index: 90;
 }
 
@@ -404,7 +404,7 @@ main .part {
 main .active:hover {
 	transition: 0.3s;
 	cursor: pointer;
-	fill: #1051D3;
+	opacity: 0.7;
 }
 
 
@@ -626,7 +626,7 @@ main .opacity {
   left: 71%;
   top: 70%;
   transform: translate(-50%, -50%);
-  z-index: 999999999;
+  z-index: 1;
   background: rgba(0, 0, 0, .8);
   opacity: 0;
   display: flex;
@@ -643,6 +643,7 @@ main .opacity {
 .slider .opacity {
   opacity: 1;
   transition: 0.3s;
+  z-index: 999999;
 }
 
 
