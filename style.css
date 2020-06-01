@@ -276,20 +276,6 @@ html {
   margin: 6px 4px;
 }
 
-.navigation .blank img {
-  width: 120px;
-  height: 120px;
-  position: relative;
-  top: 50px;
-  left: 120px;
-  display: none;
-}
-
-@media screen and (max-width: 700px) {
-  .navigation .blank img {
-    display: block;
-  }
-}
 
 
 
@@ -906,4 +892,42 @@ footer a:hover {
 footer a {
   text-decoration: none;
   color: #fff;
+}
+
+footer .qr {
+  position: relative;
+  top: -50px;
+  left: 5%;
+  display: block;
+}
+
+
+footer .blank img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  /*top: 30px;*/
+}
+
+footer .text {
+  color: #fff;
+  font-size: 1.4vw;
+  position: absolute;
+  left: 130px;
+  /*top: 30px;*/
+}
+
+
+@media screen and (max-width: 800px) {
+  .qr {
+    display: none;
+  }
+
+  footer .blank img {
+    display: none;
+  }
+
+  footer .text {
+    display: none;
+  }
 }
