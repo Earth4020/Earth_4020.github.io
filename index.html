@@ -26,15 +26,15 @@
 		      <li><a href="#header">Главная</a></li>
 		      <li><a href="#project">О проекте</a></li>
 		      <li><a href="#slider">концепт арты</a></li>
+		      <li><a href="#person">Персонажи</a></li>
 		      <li><a href="#ar">AR галерея</a></li>
 		      <li><a href="#ships">Транспорт</a></li>
-		      <li><a href="#person">Персонажи</a></li>
 		      <li><a href="#info">Команда</a></li>
 		      <li><a href="#footer">Контакты</a></li>
 
 			      <ul class="social">
 					<li class="social__item icon">
-						<a href="" class="fa fa-facebook"></a>
+						<a href="https://www.facebook.com/theearth4020/" class="fa fa-facebook"></a>
 					</li>
 					<li class="social__item icon">
 						<a href="https://twitter.com/Earth4020" class="fa fa-twitter"></a>
@@ -320,7 +320,7 @@
 	-------------------------------------------------------------------------------------------->
 
 
-<section class="person">
+<section id="person" class="person">
 	<div class="wrapper">
 		<div id="slider">
 		   <input type="radio" name="slider" id="slide1" checked>
@@ -359,16 +359,36 @@
 
 
 
+	<!--------------------------------------------------------------------------------------------
+											AR expo
+	-------------------------------------------------------------------------------------------->
+
+	<section id="ar" class="ar">
+		<h1>AR галерея</h1>
+		<div class="wrapper">
+			<div class="box"><a href="source/ship_01.usdz"><img src="img/ship_01.jpg" alt=""></a></div>
+			<div class="box"><a href="source/ship_02.usdz"><img src="img/ship_02.png" alt=""></a></div>
+			<div class="box"><a href="source/ship_03.usdz"><img src="img/ship_03.jpg" alt=""></a></div>
+		</div>
+	</section>
+
+
 
 
 	<!--------------------------------------------------------------------------------------------
 											community
 	-------------------------------------------------------------------------------------------->
 
-	<!-- <section class="info">
-		<h1>Участники проекта</h1>
-		
-	</section> -->
+	<section class="info">
+		<div class="wrapper">
+			<div class="box">
+				<video class="video" controls src="video/video.mp4"></video>
+			</div>
+			<div class="box">
+				<h1>За все года существования проекта была cформирована большая команда заинтересованных людей.</h1>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -378,12 +398,12 @@
 	-------------------------------------------------------------------------------------------->
 
 	<footer id="footer">
-		
+
 			<h1 class="wow fadeInUp">Мы в соцсетях</h1>
 				<nav class="footerNav wow fadeInUp">
 					<ul class="social">
 						<li class="social__item icon">
-							<a href="" class="fa fa-facebook"></a>
+							<a href="https://www.facebook.com/theearth4020/" class="fa fa-facebook"></a>
 						</li>
 						<li class="social__item icon">
 							<a href="https://twitter.com/Earth4020" class="fa fa-twitter"></a>
@@ -510,6 +530,23 @@
 		  }
 		});
 		 });
+	</script>
+
+	<script>
+		    // плавная прокрутка
+	  $(".navigation__ul").on("click","a", function (event) {
+	        //отменяем стандартную обработку нажатия по ссылке
+	        event.preventDefault();
+	 
+	        //забираем идентификатор бока с атрибута href
+	        var id  = $(this).attr('href'),
+	 
+	        //узнаем высоту от начала страницы до блока на который ссылается якорь
+	            top = $(id).offset().top;
+	         
+	        //анимируем переход на расстояние - top за 1500 мс
+	        $('body,html').animate({scrollTop: top}, 1000);
+	    });
 	</script>
 </body>
 </html>

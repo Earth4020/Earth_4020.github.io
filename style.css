@@ -22,6 +22,7 @@
 
 body {
 	background: #ffffff;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -125,7 +126,7 @@ html {
 }
 
 .navigation .navigation__ul a:hover {
-  opacity: 0.5;
+  color: #1051D3;
 }
 
 
@@ -449,7 +450,7 @@ main .text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: "Roboto";
+	font-family: "Roboto" sans-serif; 
 	width: 350px;
   font-size: 20px;
   padding: 30px;
@@ -682,7 +683,7 @@ main .opacity {
 
 .person {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 .person .wrapper {
@@ -764,10 +765,12 @@ main .opacity {
 }
 .person #controls {
    margin: -160px 0 0 0;
-   width: 100%;
+   width: 80%;
    height: 50px;
    z-index: 3;
    position: relative;
+   top: -130px;
+   left: 80px;
 }
 #controls label {
    transition: opacity 0.2s ease-out;
@@ -833,8 +836,57 @@ main .opacity {
 }
 
 
+/*------------------------------------------------------------------------------
+/ar
+------------------------------------------------------------------------------*/
+
+.ar {
+  width: 100%;
+  margin: 300px auto;
+}
+
+.ar h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.ar .wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.ar img {
+  width: 500px;
+  height: 400px;
+}
 
 
+
+/*------------------------------------------------------------------------------
+/footer
+------------------------------------------------------------------------------*/
+
+.info {
+  width: 100%;
+}
+
+.info .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.info .box {
+  width: 500px;
+}
+
+.info .video {
+  width: 400px;
+  height: 300px;
+}
 
 
 
@@ -852,6 +904,7 @@ footer {
 	height: 200px;
 	background: #000;
 	position: relative;
+  margin-top: 200px;
 }
 
 footer h1 {
@@ -870,7 +923,7 @@ footer .social {
 	margin: 0 auto;
 	justify-content: center;
 	position: relative;
-	top: 30px;
+	top: 110px;
 }
 
 footer .social__item {
