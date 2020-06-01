@@ -895,8 +895,8 @@ footer a {
 }
 
 footer .qr {
-  position: relative;
-  top: -50px;
+  position: absolute;
+  top: 50px;
   left: 5%;
   display: block;
 }
@@ -905,16 +905,15 @@ footer .qr {
 footer .blank img {
   width: 120px;
   height: 120px;
-  position: absolute;
-  /*top: 30px;*/
+  position: relative;
 }
 
 footer .text {
   color: #fff;
   font-size: 1.4vw;
-  position: absolute;
+  position: relative;
+  top: -120px;
   left: 130px;
-  /*top: 30px;*/
 }
 
 
