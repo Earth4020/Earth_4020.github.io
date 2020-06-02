@@ -454,7 +454,7 @@ main .text {
 	position: relative;
 	top: 150%;
 	right: 0%;
-  line-height: 21px;
+  line-height: 31px;
 	box-sizing: border-box;
 	transform: translate(-50%, -50%);
 	z-index: 99999;
@@ -464,7 +464,7 @@ main .text {
 	align-items: center;
 	font-family: "Roboto" sans-serif; 
 	width: 350px;
-  font-size: 20px;
+  font-size: 30px;
   padding: 30px;
 }
 
@@ -870,14 +870,13 @@ main .opacity {
 }
 
 .ar .box {
-  width: 550px;
-  height: 350px;
   margin: 30px;
 }
 
 .ar img {
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
 }
 
 
