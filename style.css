@@ -40,15 +40,20 @@ html {
 ------------------------------------------------------------------------------*/
 
 .navigation {
-  width: 100px;
+  width: 80px;
   height: 100%;
   padding-right: 40px;
   position: fixed;
   right: 0;
-  background: white;  
+  background: rgba(255,255,255,.5); 
   perspective: 800;   
   transition: all 800ms cubic-bezier(.9, 0, .33, 1);
   z-index: 99999;
+}
+
+
+.white {
+  background: none;
 }
 
 
@@ -356,12 +361,16 @@ header .header-wrapper {
 
 
 main {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
 	width: 100%;
 	margin: 300px auto;
 	height: auto;
+}
+
+main .wrapper {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 main .box {
@@ -376,6 +385,9 @@ main .item-2 {
 }
 
 main h1 {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
 	font-size: 1.4rem;
   opacity: 1;
   transform: translateY(20px);
@@ -430,7 +442,7 @@ main .curcle {
 main .active:hover {
 	transition: 0.3s;
 	cursor: pointer;
-	opacity: 0.7;
+	fill: #1051D3;
 }
 
 
@@ -853,18 +865,25 @@ main .opacity {
 .ar .wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 50px auto;
 }
 
+.ar .box {
+  width: 550px;
+  height: 350px;
+  margin: 30px;
+}
+
 .ar img {
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 
 
 /*------------------------------------------------------------------------------
-/footer
+/info
 ------------------------------------------------------------------------------*/
 
 .info {
@@ -879,13 +898,24 @@ main .opacity {
   margin: 0 auto;
 }
 
+.info h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.info p {
+  font-size: 1.3rem;
+  padding: 50px 50px;
+}
+
 .info .box {
-  width: 500px;
+  width: 600px;
 }
 
 .info .video {
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
 }
 
 
@@ -961,7 +991,7 @@ footer .blank img {
   position: relative;
 }
 
-footer .text {
+footer .footer_text {
   color: #fff;
   font-size: 1.4vw;
   position: relative;
