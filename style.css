@@ -492,6 +492,17 @@ main .opacity {
     height: 100%;
     margin-bottom: 15px;
 }
+
+
+.slider h1 {
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 100px;
+}
+
+
+
+
 /* Картинка мастабируется по отношению к родительскому элементу */
 .slider .item img {
     object-fit: cover;
@@ -698,6 +709,12 @@ main .opacity {
   margin-top: 300px;
 }
 
+.person h1 {
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 100px;
+}
+
 .person .wrapper {
   width: 100%;
   max-width: 1000px;
@@ -859,7 +876,8 @@ main .opacity {
 
 .ar h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.4rem;
+  margin-bottom: 100px;
 }
 
 .ar .wrapper {
